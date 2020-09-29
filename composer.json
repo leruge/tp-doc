@@ -1,0 +1,32 @@
+{
+    "name": "leruge/tp-doc",
+    "description": "这是一个根据注释自动生成接口文档的扩展，支持tp5.0和5.1",
+	"type": "think-extend",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "leruge",
+            "email": "leruge@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.0"
+    },
+	"autoload": {
+        "psr-4": {
+            "Api\\Doc\\": "src"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "think-config": {
+            "doc": "src/config.php"
+        }
+    },
+	"config": {
+        "preferred-install": "dist"
+    }
+}
